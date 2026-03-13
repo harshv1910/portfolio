@@ -3,6 +3,7 @@ import './globals.css'
 import localFont from 'next/font/local'
 import { Playfair_Display } from 'next/font/google'
 import Navbar from './components/Navbar.jsx'
+import WhatsAppFloat from './components/Whatsappfloat'
 
 /* Local Fonts */
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
       className={`${helvetica.variable} ${greatVibes.variable} ${playfair.variable}`}
     >
       <body className="antialiased font-sans">
+        <WhatsAppFloat whatsappLink="https://api.whatsapp.com/send/?phone=919068737471&text=Hi%21+I%27m+interested+in+your+services.+Let%27s+discuss+my+project" />
         <Navbar/>
         {children}
       </body>

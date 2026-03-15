@@ -32,6 +32,7 @@ import { LongFormSection } from "./components/LongFormSection";
 import { WhyWorkWithMe } from "./components/WhyWorkWIthMe";
 import CTASection from "./components/Ctasection";
 import Footer from "./components/Footer";
+import { SocialPostSlider } from "./components/Socialpostslider";
 
 export default function Portfolio() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });

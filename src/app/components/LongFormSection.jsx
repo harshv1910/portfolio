@@ -8,11 +8,17 @@ import { X, ChevronLeft, ChevronRight, Play, Youtube, Clock } from "lucide-react
    Data
 ───────────────────────────────────────────── */
 const videos = [
-  { id: "iOU8y2qQhxw", title: "Video Title One"   },
-  { id: "QTL0wVKHvQc", title: "Video Title Two"   },
-  { id: "XU-rfxHufLs", title: "Video Title Three" },
-  { id: "JedryR-yLLc", title: "Video Title Four"  },
-  { id: "qZRxc0qCODU", title: "Video Title Five"  },
+  { id: "bzXDuVfLlnY", title: "Video Title 1"  },
+  { id: "Iu8U9eFnjxE", title: "Video Title 2"  },
+  { id: "LPoVRIo-iDU", title: "Video Title 3"  },
+  { id: "Nktf6KuWmTg", title: "Video Title 4"  },
+  { id: "lS98Vqp9Bug", title: "Video Title 5"  },
+  { id: "SO3_TzWDf2U", title: "Video Title 6"  },
+  { id: "lqyBUsROsww", title: "Video Title 7"  },
+  { id: "pzaljP0zc24", title: "Video Title 8"  },
+  { id: "Xyy7LxSu8so", title: "Video Title 9"  },
+  { id: "QTL0wVKHvQc", title: "Video Title 10" },
+  { id: "iOU8y2qQhxw", title: "Video Title 11" },
 ];
 
 const thumb    = (id) => `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;

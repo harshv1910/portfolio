@@ -128,6 +128,8 @@ export default function Portfolio() {
         <Hero />
         <AboutSection />
         <Services />
+                    <div id="social-media-design"/>
+            <SocialPostSlider />
             <div id="thumbnail"/>
             <ThumbnailSliderCSS/>
             <div id="banner"/>

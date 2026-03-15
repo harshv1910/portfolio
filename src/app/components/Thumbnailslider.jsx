@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, ExternalLink, Pause, Play } from "lucide-react";
+import Image from "next/image";
 
 /* ─────────────────────────────────────────────
    Data
@@ -135,12 +136,13 @@ function ThumbCard({ thumbnail, onClick }) {
       transition={{ type: "spring", stiffness: 380, damping: 26 }}
       aria-label={`Open thumbnail #${thumbnail.id}`}
     >
-      <img
+      <Image
         src={thumbnail.src}
         alt={`YouTube Thumbnail ${thumbnail.id}`}
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         loading="lazy"
         draggable={false}
+        fill
       />
 
       {/* Hover overlay */}

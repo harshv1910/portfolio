@@ -2,6 +2,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight, Download, Pause, Play, Instagram, Twitter, Facebook } from "lucide-react";
+import Image from "next/image";
 
 /* ─────────────────────────────────────────────
    Data  –  update count / paths to match yours
@@ -189,9 +190,10 @@ function PostCard({ post, onClick }) {
       transition={{ type: "spring", stiffness: 380, damping: 26 }}
       aria-label={`Open post #${post.id}`}
     >
-      <img
+      <Image
         src={post.src}
         alt={`Social post ${post.id}`}
+        fill
         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-106"
         loading="lazy"
         draggable={false}
